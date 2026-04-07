@@ -6,4 +6,7 @@ export default defineConfig({
   site: 'https://orthomoleculairpraktijkzeist.nl',
   integrations: [sitemap(), mdx()],
   output: 'static',
+  build: {
+    assets: 'assets',
+  },
 });
