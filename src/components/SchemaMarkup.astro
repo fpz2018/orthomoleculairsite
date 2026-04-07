@@ -1,0 +1,94 @@
+---
+interface Props {
+  type?: 'localbusiness' | 'article' | 'person' | 'faq';
+  article?: {
+    headline: string;
+    description: string;
+    datePublished: string;
+    dateModified?: string;
+    image?: string;
+    url: string;
+  };
+  faq?: Array<{ question: string; answer: string }>;
+}
+const { type = 'localbusiness', article, faq } = Astro.props;
+
+const localBusiness = {
+  '@context': 'https://schema.org',
+  '@type': 'MedicalBusiness',
+  name: 'Orthomoleculair Praktijk Zeist',
+  description: 'Orthomoleculaire therapie voor darmklachten, spierpijn en vermoeidheid in Zeist. Persoonlijke aanpak door Marc de Jong, MBOG-gecertificeerd therapeut.',
+  url: 'https://orthomoleculairpraktijkzeist.nl',
+  telephone: '+31307210771',
+  email: 'info@orthomoleculairpraktijkzeist.nl',
+  address: {
+    '@type': 'PostalAddress',
+    streetAddress: 'Laan van Vollenhove 20B',
+    addressLocality: 'Zeist',
+    postalCode: '3706 AA',
+    addressCountry: 'NL',
+  },
+  geo: { '@type': 'GeoCoordinates', latitude: 52.0893, longitude: 5.2332 },
+  priceRange: '€29 - €130',
+  founder: {
+    '@type': 'Person',
+    name: 'Marc de Jong',
+    jobTitle: 'Orthomoleculair Natuurgeneeskundig Therapeut',
+    description: 'HBO-opgeleid orthomoleculair therapeut en fysiotherapeut met kPNI-specialisatie, sinds 1990 werkzaam in de gezondheidszorg.',
+  },
+  memberOf: [
+    { '@type': 'Organization', name: 'MBOG' },
+    { '@type': 'Organization', name: 'RBCZ' },
+  ],
+  areaServed: {
+    '@type': 'GeoCircle',
+    geoMidpoint: { '@type': 'GeoCoordinates', latitude: 52.0893, longitude: 5.2332 },
+    geoRadius: '25000',
+  },
+};
+
+const person = {
+  '@context': 'https://schema.org',
+  '@type': 'Person',
+  name: 'Marc de Jong',
+  jobTitle: 'Orthomoleculair Natuurgeneeskundig Therapeut (HBO)',
+  alumniOf: { '@type': 'EducationalOrganization', name: 'Evenwijs' },
+  knowsAbout: ['Orthomoleculaire therapie', 'kPNI', 'Fysiotherapie', 'Darmgezondheid', 'PNI'],
+  memberOf: [
+    { '@type': 'Organization', name: 'MBOG', identifier: 'TL1005' },
+    { '@type': 'Organization', name: 'RBCZ', identifier: '240163R' },
+  ],
+  worksFor: { '@type': 'MedicalBusiness', name: 'Orthomoleculair Praktijk Zeist' },
+};
+
+const articleSchema = article ? {
+  '@context': 'https://schema.org',
+  '@type': 'Article',
+  headline: article.headline,
+  description: article.description,
+  image: article.image,
+  author: { '@type': 'Person', name: 'Marc de Jong', url: 'https://orthomoleculairpraktijkzeist.nl/over-mij' },
+  publisher: {
+    '@type': 'Organization',
+    name: 'Orthomoleculair Praktijk Zeist',
+    logo: { '@type': 'ImageObject', url: 'https://orthomoleculairpraktijkzeist.nl/images/logo.png' },
+  },
+  datePublished: article.datePublished,
+  dateModified: article.dateModified ?? article.datePublished,
+  mainEntityOfPage: article.url,
+} : null;
+
+const faqSchema = faq ? {
+  '@context': 'https://schema.org',
+  '@type': 'FAQPage',
+  mainEntity: faq.map((f) => ({
+    '@type': 'Question',
+    name: f.question,
+    acceptedAnswer: { '@type': 'Answer', text: f.answer },
+  })),
+} : null;
+---
+<script type="application/ld+json" set:html={JSON.stringify(localBusiness)} />
+{type === 'person' && <script type="application/ld+json" set:html={JSON.stringify(person)} />}
+{articleSchema && <script type="application/ld+json" set:html={JSON.stringify(articleSchema)} />}
+{faqSchema && <script type="application/ld+json" set:html={JSON.stringify(faqSchema)} />}

@@ -1,0 +1,18 @@
+---
+interface Props {
+  quote: string;
+  author: string;
+  location?: string;
+}
+const { quote, author, location } = Astro.props;
+---
+<figure class="testimonial card fade-in">
+  <blockquote>{quote}</blockquote>
+  <figcaption>— {author}{location && `, ${location}`}</figcaption>
+</figure>
+
+<style>
+.testimonial { display: flex; flex-direction: column; gap: var(--space-sm); }
+.testimonial blockquote { border: 0; padding: 0; margin: 0; font-style: normal; color: var(--color-text); }
+.testimonial figcaption { color: var(--color-accent); font-weight: 600; font-size: 0.95rem; }
+</style>

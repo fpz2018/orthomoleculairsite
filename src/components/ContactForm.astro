@@ -1,0 +1,51 @@
+---
+// Vervang FORM_ID met je echte Formspree ID via https://formspree.io
+const formspreeId = 'mkopyzbr';
+---
+<form action={`https://formspree.io/f/${formspreeId}`} method="POST" class="contact-form">
+  <div class="row">
+    <label>
+      <span>Je naam</span>
+      <input type="text" name="name" required autocomplete="name" />
+    </label>
+    <label>
+      <span>E-mailadres</span>
+      <input type="email" name="email" required autocomplete="email" />
+    </label>
+  </div>
+  <label>
+    <span>Onderwerp</span>
+    <input type="text" name="subject" />
+  </label>
+  <label>
+    <span>Je bericht</span>
+    <textarea name="message" rows="6" required></textarea>
+  </label>
+  <input type="hidden" name="_subject" value="Nieuw bericht via website Orthomoleculair Praktijk Zeist" />
+  <button type="submit" class="btn btn-accent">Verstuur bericht</button>
+</form>
+
+<style>
+.contact-form { display: flex; flex-direction: column; gap: var(--space-md); max-width: 600px; }
+.row { display: grid; grid-template-columns: 1fr 1fr; gap: var(--space-md); }
+@media (max-width: 600px) { .row { grid-template-columns: 1fr; } }
+.contact-form label { display: flex; flex-direction: column; gap: 0.35rem; font-weight: 500; font-size: 0.95rem; color: var(--color-primary-dark); }
+.contact-form input,
+.contact-form textarea {
+  font-family: inherit;
+  font-size: 1rem;
+  padding: 0.85rem 1rem;
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-sm);
+  background: var(--color-white);
+  color: var(--color-text);
+  transition: var(--transition);
+}
+.contact-form input:focus,
+.contact-form textarea:focus {
+  outline: none;
+  border-color: var(--color-primary);
+  box-shadow: 0 0 0 3px rgba(45,90,61,0.1);
+}
+.contact-form button { align-self: flex-start; }
+</style>

@@ -1,0 +1,22 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+---
+<BaseLayout title="Pagina niet gevonden | Orthomoleculair Praktijk Zeist" description="Deze pagina bestaat niet (meer). Ga terug naar de homepage of bekijk de blog.">
+  <section class="notfound">
+    <div class="container prose">
+      <p class="eyebrow">404</p>
+      <h1>Deze pagina bestaat niet (meer)</h1>
+      <p>Mogelijk is de pagina verplaatst of bestaat hij niet. Geen zorgen — je kunt verder via de links hieronder.</p>
+      <div class="actions">
+        <a href="/" class="btn btn-accent">Terug naar home</a>
+        <a href="/blog" class="btn btn-outline">Naar de blog</a>
+        <a href="/contact" class="btn btn-outline">Contact</a>
+      </div>
+    </div>
+  </section>
+</BaseLayout>
+
+<style>
+.notfound { padding: var(--space-2xl) 0; text-align: center; }
+.actions { display: flex; gap: var(--space-sm); justify-content: center; flex-wrap: wrap; margin-top: var(--space-md); }
+</style>

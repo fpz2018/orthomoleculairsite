@@ -1,0 +1,51 @@
+---
+import PageLayout from '../layouts/PageLayout.astro';
+import FAQ from '../components/FAQ.astro';
+import CTA from '../components/CTA.astro';
+
+const faqItems = [
+  { question: 'Wat maakt jouw aanpak bij spierpijn anders?', answer: 'Ik ben fysiotherapeut én orthomoleculair therapeut. Dat betekent dat ik én naar belasting, beweging en houding kijk, én naar voeding, ontstekingsbalans, slaap en supplementen. Die combinatie maakt vaak het verschil bij chronische klachten.' },
+  { question: 'Helpt orthomoleculaire therapie bij artrose?', answer: 'Ja — niet om kraakbeen "terug te laten groeien", maar om laaggradige ontsteking te verminderen, spieren rondom het gewricht te ondersteunen en pijn beter draagbaar te maken. Voeding, omega-3, vitamine D, magnesium en gerichte beweging spelen hierin een rol.' },
+  { question: 'Mijn fysio en huisarts kunnen niets meer doen — heeft dit dan zin?', answer: 'Vaak juist wel. Veel chronische pijn heeft een biochemische component (laaggradige ontsteking, micronutriënt-tekorten, slaap- en stressfactoren) die in standaardzorg buiten beeld blijft. Een gratis kennismaking helpt om te kijken of het bij jou speelt.' },
+  { question: 'Werk je samen met mijn fysio?', answer: 'Heel graag. Ik vervang geen fysiotherapie — ik vul aan. Korte lijnen met je behandelaar zijn altijd mogelijk als jij dat wilt.' },
+];
+---
+<PageLayout
+  title="Chronische spierpijn &amp; gewrichtsklachten | Orthomoleculaire therapie Zeist"
+  description="Last van chronische spier- of gewrichtspijn, artrose of peesklachten? Marc de Jong combineert fysiotherapie met orthomoleculaire therapie in Zeist."
+  h1="Spier- en gewrichtsklachten aanpakken bij de oorzaak"
+  eyebrow="Specialisatie · Spier &amp; bot"
+  intro="Chronische pijn heeft zelden één oorzaak. Vaak is het een combinatie van laaggradige ontsteking, micronutriënt-tekorten, slaap, stress én belasting. Door mijn dubbele achtergrond als fysiotherapeut en orthomoleculair therapeut kijk ik altijd naar het hele plaatje."
+  schemaType="faq"
+  faq={faqItems}
+>
+  <h2>Welke klachten zie ik veel</h2>
+  <ul>
+    <li><strong>Artrose</strong> — knie, heup, hand, rug</li>
+    <li><strong>Chronische rugpijn</strong> waar standaardzorg niet meer uitkomt</li>
+    <li><strong>Achillespees-klachten</strong> en andere peesblessures</li>
+    <li><strong>Fibromyalgie</strong> en chronisch pijnsyndroom</li>
+    <li><strong>Sportblessures</strong> die maar niet herstellen</li>
+    <li><strong>Aanhoudende spierspanning</strong> in nek, schouders of rug</li>
+  </ul>
+
+  <h2>Mijn aanpak</h2>
+  <p>Bij spier- en gewrichtsklachten kijk ik niet alleen naar het pijnlijke gebied. De vraag is: waarom herstelt het lichaam niet?</p>
+  <ol>
+    <li><strong>Brede analyse:</strong> klachten, voeding, slaap, stress, beweging, eerdere behandelingen, medicatie.</li>
+    <li><strong>Eventueel labonderzoek:</strong> vitamine D, omega-3-index, hs-CRP, ferritine, glucose/HbA1c.</li>
+    <li><strong>Geïntegreerd plan:</strong> ontstekingsremmende voeding, gerichte supplementen (omega-3, magnesium, vitamine D, curcumine, collageen waar zinvol), slaap- en stressinterventies, en bewegingsadvies.</li>
+    <li><strong>Evaluatie elke 4–6 weken:</strong> we sturen bij op basis van wat werkt.</li>
+  </ol>
+
+  <h2>Lees verder</h2>
+  <ul>
+    <li><a href="/blog/artrose-aanpak-360-combinatie-van-oefentherapie-ontstekingsremmend-dieet-en-supplementen">Artrose aanpak 360°: oefentherapie, dieet en supplementen</a></li>
+    <li><a href="/blog/chronische-rugpijn-hoe-magnesium-en-stressmanagement-spierontspanning-ondersteunen">Chronische rugpijn: magnesium en stressmanagement</a></li>
+    <li><a href="/blog/laaggradige-ontsteking-bij-achillespeesblessures-verklaard">Laaggradige ontsteking bij achillespees-blessures</a></li>
+    <li><a href="/blog/de-beste-orthomoleculaire-strategie-bij-pijn-complete-gids">De beste orthomoleculaire strategie bij pijn</a></li>
+  </ul>
+</PageLayout>
+
+<FAQ items={faqItems} title="Veelgestelde vragen over spier- en botklachten" />
+<CTA />

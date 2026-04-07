@@ -1,0 +1,65 @@
+---
+import BaseLayout from './BaseLayout.astro';
+interface Props {
+  title: string;
+  description: string;
+  pubDate: Date;
+  updatedDate?: Date;
+  heroImage?: string;
+  category: string;
+  readingTime?: string;
+  url: string;
+}
+const { title, description, pubDate, updatedDate, heroImage, category, readingTime, url } = Astro.props;
+const formatDate = (d: Date) => d.toLocaleDateString('nl-NL', { year: 'numeric', month: 'long', day: 'numeric' });
+const article = {
+  headline: title,
+  description,
+  datePublished: pubDate.toISOString(),
+  dateModified: (updatedDate ?? pubDate).toISOString(),
+  image: heroImage,
+  url,
+};
+---
+<BaseLayout title={`${title} | Orthomoleculair Praktijk Zeist`} description={description} type="article" schemaType="article" article={article} image={heroImage}>
+  <article class="blog-post">
+    <header class="blog-header">
+      <div class="container prose">
+        <p class="eyebrow"><a href={`/blog?cat=${category}`}>{category.replace(/-/g, ' ')}</a></p>
+        <h1>{title}</h1>
+        <div class="meta">
+          <span>Door <a href="/over-mij">Marc de Jong</a></span>
+          <span>·</span>
+          <time datetime={pubDate.toISOString()}>{formatDate(pubDate)}</time>
+          {readingTime && <><span>·</span><span>{readingTime}</span></>}
+        </div>
+      </div>
+    </header>
+    {heroImage && (
+      <div class="container">
+        <img src={heroImage} alt={title} class="hero-image" loading="eager" />
+      </div>
+    )}
+    <div class="container prose blog-body">
+      <slot />
+    </div>
+    <div class="container prose blog-cta">
+      <div class="cta-box">
+        <h3>Persoonlijk advies bij jouw klachten?</h3>
+        <p>Plan een gratis kennismakingsgesprek van 20 minuten — geen verplichting.</p>
+        <a href="https://orthomoleculairzeist.clientomgeving.nl/afspraak-maken" class="btn btn-accent">Afspraak inplannen</a>
+      </div>
+    </div>
+  </article>
+</BaseLayout>
+
+<style>
+.blog-header { padding: var(--space-xl) 0 var(--space-md); background: linear-gradient(180deg, var(--color-secondary) 0%, var(--color-bg) 100%); }
+.meta { color: var(--color-text-muted); font-size: 0.95rem; margin-top: var(--space-sm); display: flex; gap: 0.5rem; flex-wrap: wrap; }
+.hero-image { width: 100%; max-height: 480px; object-fit: cover; border-radius: var(--radius-lg); margin: var(--space-md) 0; }
+.blog-body { padding: var(--space-lg) 0; font-size: 1.05rem; }
+.blog-body h2 { margin-top: var(--space-lg); }
+.blog-cta { padding-bottom: var(--space-2xl); }
+.cta-box { background: var(--color-secondary); padding: var(--space-lg); border-radius: var(--radius-lg); text-align: center; border-left: 4px solid var(--color-accent); }
+.cta-box h3 { margin-top: 0; }
+</style>

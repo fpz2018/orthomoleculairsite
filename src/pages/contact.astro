@@ -1,0 +1,38 @@
+---
+import PageLayout from '../layouts/PageLayout.astro';
+import ContactForm from '../components/ContactForm.astro';
+---
+<PageLayout
+  title="Contact | Orthomoleculair Praktijk Zeist"
+  description="Neem contact op met Marc de Jong, orthomoleculair therapeut in Zeist. Telefoon, e-mail of contactformulier."
+  h1="Contact"
+  eyebrow="Bereikbaarheid"
+  intro="Een vraag, twijfel of gewoon zin in een korte kennismaking? Bel, mail of stuur me een bericht. Ik reageer doorgaans binnen 1–2 werkdagen."
+>
+  <div class="contact-cols">
+    <div>
+      <h2>Praktijk</h2>
+      <address>
+        <strong>Orthomoleculair Praktijk Zeist</strong><br />
+        Laan van Vollenhove 20B<br />
+        3706 AA Zeist
+      </address>
+      <h3>Direct contact</h3>
+      <ul>
+        <li><strong>Telefoon:</strong> <a href="tel:+31307210771">030 - 721 0771</a></li>
+        <li><strong>E-mail:</strong> <a href="mailto:info@orthomoleculairpraktijkzeist.nl">info@orthomoleculairpraktijkzeist.nl</a></li>
+      </ul>
+      <a href="https://orthomoleculairzeist.clientomgeving.nl/afspraak-maken" class="btn btn-accent" style="margin-top:var(--space-md)">Afspraak inplannen</a>
+    </div>
+    <div>
+      <h2>Stuur een bericht</h2>
+      <ContactForm />
+    </div>
+  </div>
+</PageLayout>
+
+<style>
+.contact-cols { display: grid; grid-template-columns: 1fr 1.3fr; gap: var(--space-xl); margin-top: var(--space-md); }
+@media (max-width: 800px) { .contact-cols { grid-template-columns: 1fr; } }
+address { font-style: normal; line-height: 1.7; }
+</style>

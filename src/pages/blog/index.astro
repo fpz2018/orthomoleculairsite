@@ -1,0 +1,67 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import BlogCard from '../../components/BlogCard.astro';
+import { getCollection } from 'astro:content';
+
+const posts = (await getCollection('blog')).sort(
+  (a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf()
+);
+
+const categories = [
+  { id: 'all', label: 'Alle artikelen' },
+  { id: 'darmgezondheid', label: 'Darmgezondheid' },
+  { id: 'spier-en-botklachten', label: 'Spier &amp; bot' },
+  { id: 'voeding-en-supplementen', label: 'Voeding &amp; supplementen' },
+  { id: 'leefstijl', label: 'Leefstijl' },
+];
+---
+<BaseLayout
+  title="Blog | Orthomoleculair Praktijk Zeist"
+  description="Artikelen over darmgezondheid, spier- en botklachten, voeding, supplementen en leefstijl door Marc de Jong, orthomoleculair therapeut in Zeist."
+>
+  <header class="page-header">
+    <div class="container prose">
+      <p class="eyebrow">Blog</p>
+      <h1>Artikelen &amp; inzichten</h1>
+      <p class="lead">Praktische, onderbouwde artikelen over darmgezondheid, spier- en botklachten, voeding, supplementen en leefstijl.</p>
+    </div>
+  </header>
+  <section>
+    <div class="container">
+      <nav class="cat-nav" aria-label="Categorieën">
+        {categories.map((c) => <a href={c.id === 'all' ? '/blog' : `/blog?cat=${c.id}`} set:html={c.label} />)}
+      </nav>
+      <div class="grid grid-3">
+        {posts.map((post) => (
+          <BlogCard
+            url={`/blog/${post.slug}`}
+            title={post.data.title}
+            description={post.data.description}
+            pubDate={post.data.pubDate}
+            category={post.data.category}
+            heroImage={post.data.heroImage}
+            readingTime={post.data.readingTime}
+          />
+        ))}
+      </div>
+      {posts.length === 0 && <p style="margin-top:var(--space-md);color:var(--color-text-muted)">Er zijn binnenkort nieuwe artikelen beschikbaar.</p>}
+    </div>
+  </section>
+</BaseLayout>
+
+<style>
+.page-header { padding: var(--space-xl) 0 var(--space-md); background: linear-gradient(180deg, var(--color-secondary) 0%, var(--color-bg) 100%); }
+.lead { font-size: 1.2rem; color: var(--color-text-muted); }
+.cat-nav { display: flex; flex-wrap: wrap; gap: 0.6rem; margin-bottom: var(--space-lg); }
+.cat-nav a {
+  padding: 0.5rem 1rem;
+  border-radius: 999px;
+  background: var(--color-secondary);
+  color: var(--color-primary-dark);
+  text-decoration: none;
+  font-size: 0.9rem;
+  font-weight: 500;
+  border: 1px solid var(--color-border);
+}
+.cat-nav a:hover { background: var(--color-primary); color: var(--color-white); }
+</style>

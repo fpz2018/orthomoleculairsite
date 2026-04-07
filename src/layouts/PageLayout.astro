@@ -1,0 +1,36 @@
+---
+import BaseLayout from './BaseLayout.astro';
+interface Props {
+  title: string;
+  description: string;
+  h1: string;
+  eyebrow?: string;
+  intro?: string;
+  schemaType?: 'localbusiness' | 'person' | 'faq';
+  faq?: any;
+}
+const { title, description, h1, eyebrow, intro, schemaType, faq } = Astro.props;
+---
+<BaseLayout title={title} description={description} schemaType={schemaType} faq={faq}>
+  <header class="page-header">
+    <div class="container prose">
+      {eyebrow && <p class="eyebrow">{eyebrow}</p>}
+      <h1>{h1}</h1>
+      {intro && <p class="lead">{intro}</p>}
+    </div>
+  </header>
+  <article class="page-content">
+    <div class="container prose">
+      <slot />
+    </div>
+  </article>
+</BaseLayout>
+
+<style>
+.page-header {
+  padding: var(--space-xl) 0 var(--space-md);
+  background: linear-gradient(180deg, var(--color-secondary) 0%, var(--color-bg) 100%);
+}
+.lead { font-size: 1.2rem; color: var(--color-text-muted); margin-top: var(--space-sm); }
+.page-content { padding: var(--space-lg) 0 var(--space-2xl); }
+</style>

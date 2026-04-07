@@ -1,0 +1,165 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import Hero from '../components/Hero.astro';
+import ServiceCard from '../components/ServiceCard.astro';
+import TestimonialCard from '../components/TestimonialCard.astro';
+import FAQ from '../components/FAQ.astro';
+import ContactForm from '../components/ContactForm.astro';
+import CTA from '../components/CTA.astro';
+import testimonials from '../data/testimonials.json';
+
+const faqItems = [
+  { question: 'Wat gebeurt er tijdens het eerste online gesprek?', answer: 'Tijdens het gratis online kennismakingsgesprek van 20 minuten bespreken we jouw klachten en wat je graag zou willen bereiken. Je krijgt een eerste indruk van mijn werkwijze en er is geen verplichting om verder te gaan.' },
+  { question: 'Voor welke klachten kan ik bij jou terecht?', answer: 'Vooral darm- en buikklachten (PDS, SIBO, voedselintoleranties), spier- en gewrichtsklachten (artrose, peesklachten, chronische rugpijn) en vermoeidheid/energieklachten. Bij twijfel: bel of mail even.' },
+  { question: 'Wordt orthomoleculaire therapie vergoed?', answer: 'Veel aanvullende zorgverzekeringen vergoeden consulten geheel of gedeeltelijk omdat ik MBOG- en RBCZ-geregistreerd ben. Op de pagina vergoedingen lees je per zorgverzekeraar wat geldt.' },
+  { question: 'Wat is het verschil met een diëtist of huisarts?', answer: 'Een orthomoleculair therapeut kijkt breder dan alleen voeding of standaardbehandeling: voeding, leefstijl, slaap, stress, supplementen en eventueel labonderzoek (bloed, ontlasting). Het is aanvullend op reguliere zorg, geen vervanging.' },
+  { question: 'Hoe lang duurt een traject gemiddeld?', answer: 'Dat hangt af van je klacht, maar voor de meeste mensen is het een traject van enkele maanden met een uitgebreide intake en 3–6 vervolgconsulten. Bij chronische klachten soms langer.' },
+  { question: 'Werk je ook online?', answer: 'Ja. Vervolgconsulten kunnen prima online via beeldbellen. De uitgebreide intake doe ik bij voorkeur op locatie in Zeist.' },
+];
+---
+<BaseLayout
+  title="Orthomoleculair Praktijk Zeist | Marc de Jong — Darmklachten, spierpijn & vermoeidheid"
+  description="Persoonlijke orthomoleculaire therapie in Zeist voor darmklachten, spierpijn en vermoeidheid. MBOG- en RBCZ-geregistreerd. Plan een gratis kennismaking."
+  schemaType="faq"
+  faq={faqItems}
+>
+  <Hero
+    eyebrow="Orthomoleculair Praktijk Zeist"
+    title="Eindelijk verlichting van je buikklachten of spierpijn"
+    subtitle="Orthomoleculaire therapie voor mensen die de oorzaak willen vinden, niet alleen het symptoom dempen. Persoonlijke aanpak door Marc de Jong — fysiotherapeut én orthomoleculair therapeut."
+    ctaPrimary={{ href: 'https://orthomoleculairzeist.clientomgeving.nl/afspraak-maken', label: 'Gratis kennismaking inplannen' }}
+    ctaSecondary={{ href: '#specialisaties', label: 'Bekijk hoe ik je kan helpen' }}
+  />
+
+  <section class="about-short">
+    <div class="container about-grid">
+      <div class="about-photo">
+        <div class="photo-placeholder">Foto Marc</div>
+      </div>
+      <div>
+        <p class="eyebrow">Even voorstellen</p>
+        <h2>Marc de Jong</h2>
+        <p class="lead">Orthomoleculair Natuurgeneeskundig Therapeut (HBO), kPNI-therapeut en fysiotherapeut. Sinds 1990 werk ik in de gezondheidszorg, met een unieke combinatie van fysiotherapeutische én orthomoleculaire kennis.</p>
+        <p>"Ik geloof niet in quick fixes. Wel in een grondige analyse, een plan dat past bij jouw leven, en de tijd nemen om écht te begrijpen wat er speelt."</p>
+        <p class="creds">MBOG <strong>TL1005</strong> · RBCZ <strong>240163R</strong></p>
+        <a href="/over-mij" class="btn btn-outline">Lees meer over mij</a>
+      </div>
+    </div>
+  </section>
+
+  <section id="specialisaties" class="section-tinted">
+    <div class="container">
+      <p class="eyebrow">Waar ik je mee kan helpen</p>
+      <h2>Drie specialisaties</h2>
+      <div class="grid grid-3" style="margin-top: var(--space-lg)">
+        <ServiceCard
+          title="Darmklachten"
+          href="/darmklachten"
+          description="Opgeblazen gevoel, PDS, SIBO, voedselintoleranties of chronische buikpijn — vaak ligt de oorzaak dieper dan 'gevoelige darmen'."
+          symptoms={['Opgeblazen buik en winderigheid','PDS / IBS','SIBO','Voedselintoleranties','Wisselende ontlasting']}
+        />
+        <ServiceCard
+          title="Spier- &amp; botklachten"
+          href="/spierpijn"
+          description="Chronische pijn, artrose, peesklachten of fibromyalgie. Door mijn fysio-achtergrond kijk ik altijd én naar beweging én naar biochemie."
+          symptoms={['Artrose (knie, heup, hand)','Chronische rugpijn','Achillespees-klachten','Fibromyalgie','Stijfheid en spierspanning']}
+        />
+        <ServiceCard
+          title="Vermoeidheid"
+          href="/vermoeidheid"
+          description="Altijd moe, brain fog, weinig fut. Vaak een combinatie van tekorten, bijnierstress, schildklier of darmen."
+          symptoms={['Aanhoudende vermoeidheid','Brain fog','Slechte slaap','Energiedip middag/avond','Bijnier­vermoeidheid']}
+        />
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="container">
+      <p class="eyebrow">Mijn werkwijze</p>
+      <h2>Vier stappen naar inzicht en herstel</h2>
+      <ol class="steps">
+        <li><strong>Gratis kennismaking</strong><span>20 min online — we kijken of de aanpak bij je past.</span></li>
+        <li><strong>Grondige analyse</strong><span>Uitgebreide intake van 60–90 min, eventueel met bloed- of ontlastingonderzoek.</span></li>
+        <li><strong>Persoonlijk plan</strong><span>Binnen een week ontvang je een concreet plan op maat: voeding, leefstijl, supplementen.</span></li>
+        <li><strong>Begeleiding &amp; evaluatie</strong><span>Vervolgconsulten om bij te sturen en samen vooruitgang te zien.</span></li>
+      </ol>
+    </div>
+  </section>
+
+  <section class="section-tinted">
+    <div class="container">
+      <p class="eyebrow">Ervaringen</p>
+      <h2>Wat cliënten zeggen</h2>
+      <div class="grid grid-3" style="margin-top: var(--space-lg)">
+        {testimonials.map((t) => <TestimonialCard quote={t.quote} author={t.author} location={t.location} />)}
+      </div>
+    </div>
+  </section>
+
+  <FAQ items={faqItems} />
+
+  <section class="contact-section">
+    <div class="container contact-grid">
+      <div>
+        <p class="eyebrow">Contact</p>
+        <h2>Stuur me een bericht</h2>
+        <p>Twijfel je of mijn aanpak bij jou past? Bel, mail of stuur een bericht. Ik reageer binnen 1–2 werkdagen.</p>
+        <ul class="contact-list">
+          <li><strong>Telefoon:</strong> <a href="tel:+31307210771">030 - 721 0771</a></li>
+          <li><strong>E-mail:</strong> <a href="mailto:info@orthomoleculairpraktijkzeist.nl">info@orthomoleculairpraktijkzeist.nl</a></li>
+          <li><strong>Adres:</strong> Laan van Vollenhove 20B, 3706 AA Zeist</li>
+        </ul>
+        <a href="https://orthomoleculairzeist.clientomgeving.nl/afspraak-maken" class="btn btn-accent" style="margin-top:var(--space-md)">Afspraak inplannen</a>
+      </div>
+      <ContactForm />
+    </div>
+  </section>
+</BaseLayout>
+
+<style>
+.about-short { padding: var(--space-2xl) 0; }
+.about-grid { display: grid; grid-template-columns: 1fr 1.4fr; gap: var(--space-xl); align-items: center; }
+@media (max-width: 800px) { .about-grid { grid-template-columns: 1fr; } }
+.about-photo { display: flex; justify-content: center; }
+.photo-placeholder {
+  width: 280px; height: 340px;
+  background: var(--color-secondary);
+  border-radius: var(--radius-lg);
+  display: flex; align-items: center; justify-content: center;
+  color: var(--color-text-muted);
+  border: 2px dashed var(--color-border);
+}
+.creds { color: var(--color-text-muted); font-size: 0.9rem; margin: var(--space-sm) 0 var(--space-md); }
+.steps { list-style: none; counter-reset: step; padding: 0; margin-top: var(--space-lg); display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: var(--space-md); }
+.steps li {
+  counter-increment: step;
+  background: var(--color-white);
+  padding: var(--space-md);
+  border-radius: var(--radius-md);
+  border: 1px solid var(--color-border);
+  position: relative;
+  padding-top: calc(var(--space-md) + 24px);
+}
+.steps li::before {
+  content: counter(step);
+  position: absolute;
+  top: var(--space-md);
+  left: var(--space-md);
+  width: 32px; height: 32px;
+  border-radius: 50%;
+  background: var(--color-accent);
+  color: var(--color-white);
+  display: flex; align-items: center; justify-content: center;
+  font-family: var(--font-heading);
+  font-weight: 700;
+}
+.steps strong { display: block; color: var(--color-primary-dark); margin-bottom: 0.25rem; }
+.steps span { color: var(--color-text-muted); font-size: 0.93rem; }
+
+.contact-section { padding: var(--space-2xl) 0; }
+.contact-grid { display: grid; grid-template-columns: 1fr 1.2fr; gap: var(--space-xl); }
+@media (max-width: 800px) { .contact-grid { grid-template-columns: 1fr; } }
+.contact-list { list-style: none; padding: 0; margin: var(--space-md) 0; }
+.contact-list li { margin-bottom: 0.5rem; }
+</style>

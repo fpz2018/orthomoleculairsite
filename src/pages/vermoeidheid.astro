@@ -1,0 +1,49 @@
+---
+import PageLayout from '../layouts/PageLayout.astro';
+import FAQ from '../components/FAQ.astro';
+import CTA from '../components/CTA.astro';
+
+const faqItems = [
+  { question: 'Mijn bloed bij de huisarts is "normaal" — wat dan?', answer: 'Reguliere bloedwaarden zijn vaak gericht op het uitsluiten van ziekte, niet op optimale waarden. Veel mensen met klachten zitten "binnen de norm" maar ver van optimaal — denk aan vitamine D, ferritine, B12, schildklierwaarden. Ik kijk vanuit een ander referentiekader.' },
+  { question: 'Kan vermoeidheid met mijn darmen te maken hebben?', answer: 'Ja, vaak. Een verstoorde darmflora, voedselintoleranties of SIBO kunnen leiden tot malabsorptie van vitamines (B12, ijzer), laaggradige ontsteking en brain fog. Daarom check ik bij vermoeidheid altijd ook de darmen.' },
+  { question: 'Wat is bijniervermoeidheid?', answer: 'Geen erkende medische diagnose, maar wel een herkenbaar patroon: aanhoudende uitputting na lange stressperiodes, ochtenddip, energiedip in de middag en moeilijk in slaap komen ondanks moeheid. Dit pak ik aan met slaap- en stressinterventies, voeding en gerichte ondersteuning.' },
+  { question: 'Hoe snel kan ik verbetering verwachten?', answer: 'Bij vermoeidheid reken ik vaak in 8–12 weken voor merkbare vooruitgang. Soms eerder als er een duidelijk tekort is dat snel aan te vullen valt. Realistische verwachtingen helpen.' },
+];
+---
+<PageLayout
+  title="Vermoeidheid en energiegebrek | Orthomoleculaire therapie Zeist"
+  description="Altijd moe, brain fog, geen energie? Marc de Jong helpt je in Zeist de oorzaak van je vermoeidheid te vinden — vanuit een breed orthomoleculair perspectief."
+  h1="Altijd moe? Ontdek wat je lichaam mist"
+  eyebrow="Specialisatie · Energie &amp; herstel"
+  intro="Vermoeidheid die niet weggaat met een goede nacht slaap heeft vaak meerdere oorzaken tegelijk: tekorten, bijnierstress, schildklier, verstoorde darmen, slaapproblematiek of laaggradige ontsteking. Vanuit orthomoleculair perspectief breng ik in kaart wat er bij jou speelt."
+  schemaType="faq"
+  faq={faqItems}
+>
+  <h2>Wat speelt er vaak bij vermoeidheid</h2>
+  <ul>
+    <li><strong>Micronutriënt-tekorten</strong> — vitamine D, B12, ijzer, magnesium</li>
+    <li><strong>Schildklier-problematiek</strong> die net "binnen de norm" valt</li>
+    <li><strong>Bijnierstress / HPA-as ontregeling</strong> na lange stressperiodes</li>
+    <li><strong>Darm-gerelateerde vermoeidheid</strong> (SIBO, dysbiose, malabsorptie)</li>
+    <li><strong>Slaapproblemen</strong> en circadiane ontregeling</li>
+    <li><strong>Laaggradige ontsteking</strong> en metabole disbalans</li>
+  </ul>
+
+  <h2>Mijn aanpak</h2>
+  <ol>
+    <li><strong>Brede intake:</strong> klachtenpatroon door de dag, slaap, stress, voeding, leefstijl, eerdere onderzoeken.</li>
+    <li><strong>Gericht labonderzoek:</strong> bloedwaarden bekijken vanuit optimaal-perspectief, eventueel ontlasting bij darmverdenking.</li>
+    <li><strong>Plan op maat:</strong> voeding voor stabiele bloedsuiker en energie, gerichte suppletie bij tekorten, slaap- en stressinterventies, eventueel darmherstel.</li>
+    <li><strong>Evaluatie en bijsturen:</strong> we werken in fases, niet in één big bang.</li>
+  </ol>
+
+  <h2>Lees verder</h2>
+  <ul>
+    <li><a href="/blog/tekort-vitamine-d-herkennen">Hoe herken je een tekort aan vitamine D?</a></li>
+    <li><a href="/blog/kracht-van-magnesium">De kracht van magnesium</a></li>
+    <li><a href="/blog/insulineresistentie">Insulineresistentie en energie</a></li>
+  </ul>
+</PageLayout>
+
+<FAQ items={faqItems} title="Veelgestelde vragen over vermoeidheid" />
+<CTA />
