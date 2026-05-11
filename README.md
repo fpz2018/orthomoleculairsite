@@ -37,7 +37,7 @@ npm run preview  # preview de build
    - lactaat
    - afslankprogrammas
 5. **Pagina vergoedingen** — definitieve lijst zorgverzekeraars toevoegen.
-6. **Foto Marc** — sla foto op als `public/images/marc.jpg` (±900 px breed, kwaliteit 80-85, 150-250 KB). Code is al gewired op homepage + over-mij pagina.
+6. **Foto Marc** — `public/images/marc.jpg` (97 KB, gewired op homepage + over-mij pagina). Originele PNG (1.9 MB) staat als backup in `assets-source/marc.png` (gitignored, niet gedeployed).
 7. **Formspree ID** — verifieer of `mkopyzbr` werkt: stuur een testbericht via `/contact` en bevestig op formspree.io.
 8. **Volledige blogposts** — de 7 gemigreerde blogs zijn samengevatte versies. Volledige content stond in `_content-raw/` (gitignored, niet meer aanwezig — bron mogelijk WordPress export).
 9. **Tone-of-voice blogposts** — structurele pagina's zijn nu u-vorm; blogposts gebruiken nog "je/jij/jouw". Apart pasje doen als wenselijk.
