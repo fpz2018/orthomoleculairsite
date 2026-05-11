@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 200" width="600" height="200">
+  <rect width="600" height="200" fill="#FAFAF7"/>
+  <circle cx="100" cy="100" r="56" fill="#2D5A3D"/>
+  <text x="100" y="118" font-family="Georgia, 'Lora', serif" font-size="58" font-weight="700" fill="#ffffff" text-anchor="middle">O</text>
+  <text x="180" y="92" font-family="Georgia, 'Lora', serif" font-size="28" font-weight="700" fill="#1f3f2a">Orthomoleculair</text>
+  <text x="180" y="128" font-family="Georgia, 'Lora', serif" font-size="28" font-weight="400" fill="#2D5A3D">Praktijk Zeist</text>
+  <text x="180" y="158" font-family="'Plus Jakarta Sans', sans-serif" font-size="14" fill="#555" letter-spacing="2">MARC DE JONG · MBOG · RBCZ</text>
+</svg>

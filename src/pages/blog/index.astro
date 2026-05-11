@@ -7,12 +7,17 @@ const posts = (await getCollection('blog')).sort(
   (a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf()
 );
 
-const categories = [
-  { id: 'all', label: 'Alle artikelen' },
+const usedCategories = new Set(posts.map((p) => p.data.category));
+const allCategories = [
   { id: 'darmgezondheid', label: 'Darmgezondheid' },
   { id: 'spier-en-botklachten', label: 'Spier &amp; bot' },
   { id: 'voeding-en-supplementen', label: 'Voeding &amp; supplementen' },
   { id: 'leefstijl', label: 'Leefstijl' },
+  { id: 'algemeen', label: 'Algemeen' },
+];
+const categories = [
+  { id: 'all', label: 'Alle artikelen' },
+  ...allCategories.filter((c) => usedCategories.has(c.id as any)),
 ];
 ---
 <BaseLayout
@@ -29,39 +34,79 @@ const categories = [
   <section>
     <div class="container">
       <nav class="cat-nav" aria-label="Categorieën">
-        {categories.map((c) => <a href={c.id === 'all' ? '/blog' : `/blog?cat=${c.id}`} set:html={c.label} />)}
+        {categories.map((c) => (
+          <button type="button" class="cat-btn" data-cat={c.id} aria-pressed={c.id === 'all' ? 'true' : 'false'} set:html={c.label} />
+        ))}
       </nav>
-      <div class="grid grid-3">
+      <div class="grid grid-3" id="post-grid">
         {posts.map((post) => (
-          <BlogCard
-            url={`/blog/${post.slug}`}
-            title={post.data.title}
-            description={post.data.description}
-            pubDate={post.data.pubDate}
-            category={post.data.category}
-            heroImage={post.data.heroImage}
-            readingTime={post.data.readingTime}
-          />
+          <div class="post-wrap" data-category={post.data.category}>
+            <BlogCard
+              url={`/blog/${post.slug}`}
+              title={post.data.title}
+              description={post.data.description}
+              pubDate={post.data.pubDate}
+              category={post.data.category}
+              heroImage={post.data.heroImage}
+              readingTime={post.data.readingTime}
+            />
+          </div>
         ))}
       </div>
+      <p id="no-posts" style="display:none;margin-top:var(--space-md);color:var(--color-text-muted)">Geen artikelen in deze categorie.</p>
       {posts.length === 0 && <p style="margin-top:var(--space-md);color:var(--color-text-muted)">Er zijn binnenkort nieuwe artikelen beschikbaar.</p>}
     </div>
   </section>
+
+  <script>
+    const buttons = document.querySelectorAll<HTMLButtonElement>('.cat-btn');
+    const wraps = document.querySelectorAll<HTMLElement>('.post-wrap');
+    const empty = document.getElementById('no-posts');
+
+    const params = new URLSearchParams(window.location.search);
+    const initial = params.get('cat') || 'all';
+    applyFilter(initial);
+
+    buttons.forEach((b) => {
+      b.addEventListener('click', () => {
+        const cat = b.dataset.cat || 'all';
+        applyFilter(cat);
+        const url = new URL(window.location.href);
+        if (cat === 'all') url.searchParams.delete('cat');
+        else url.searchParams.set('cat', cat);
+        history.replaceState({}, '', url.toString());
+      });
+    });
+
+    function applyFilter(cat: string) {
+      buttons.forEach((b) => b.setAttribute('aria-pressed', b.dataset.cat === cat ? 'true' : 'false'));
+      let visible = 0;
+      wraps.forEach((w) => {
+        const match = cat === 'all' || w.dataset.category === cat;
+        w.style.display = match ? '' : 'none';
+        if (match) visible++;
+      });
+      if (empty) empty.style.display = visible === 0 ? '' : 'none';
+    }
+  </script>
 </BaseLayout>
 
 <style>
 .page-header { padding: var(--space-xl) 0 var(--space-md); background: linear-gradient(180deg, var(--color-secondary) 0%, var(--color-bg) 100%); }
 .lead { font-size: 1.2rem; color: var(--color-text-muted); }
 .cat-nav { display: flex; flex-wrap: wrap; gap: 0.6rem; margin-bottom: var(--space-lg); }
-.cat-nav a {
+.cat-btn {
   padding: 0.5rem 1rem;
   border-radius: 999px;
   background: var(--color-secondary);
   color: var(--color-primary-dark);
-  text-decoration: none;
   font-size: 0.9rem;
   font-weight: 500;
   border: 1px solid var(--color-border);
+  cursor: pointer;
+  font-family: inherit;
+  transition: var(--transition);
 }
-.cat-nav a:hover { background: var(--color-primary); color: var(--color-white); }
+.cat-btn:hover { background: var(--color-primary); color: var(--color-white); }
+.cat-btn[aria-pressed="true"] { background: var(--color-primary); color: var(--color-white); border-color: var(--color-primary); }
 </style>

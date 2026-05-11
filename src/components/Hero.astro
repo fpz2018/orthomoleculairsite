@@ -3,8 +3,8 @@ interface Props {
   eyebrow?: string;
   title: string;
   subtitle: string;
-  ctaPrimary?: { href: string; label: string };
-  ctaSecondary?: { href: string; label: string };
+  ctaPrimary?: { href: string; label: string; external?: boolean };
+  ctaSecondary?: { href: string; label: string; external?: boolean };
 }
 const { eyebrow, title, subtitle, ctaPrimary, ctaSecondary } = Astro.props;
 ---
@@ -15,8 +15,8 @@ const { eyebrow, title, subtitle, ctaPrimary, ctaSecondary } = Astro.props;
       <h1>{title}</h1>
       <p class="hero-subtitle">{subtitle}</p>
       <div class="hero-ctas">
-        {ctaPrimary && <a href={ctaPrimary.href} class="btn btn-accent">{ctaPrimary.label}</a>}
-        {ctaSecondary && <a href={ctaSecondary.href} class="btn btn-outline">{ctaSecondary.label}</a>}
+        {ctaPrimary && <a href={ctaPrimary.href} class="btn btn-accent" target={ctaPrimary.external ? '_blank' : undefined} rel={ctaPrimary.external ? 'noopener' : undefined}>{ctaPrimary.label}</a>}
+        {ctaSecondary && <a href={ctaSecondary.href} class="btn btn-outline" target={ctaSecondary.external ? '_blank' : undefined} rel={ctaSecondary.external ? 'noopener' : undefined}>{ctaSecondary.label}</a>}
       </div>
     </div>
   </div>

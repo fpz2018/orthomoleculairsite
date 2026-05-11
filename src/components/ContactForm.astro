@@ -1,11 +1,11 @@
 ---
-// Vervang FORM_ID met je echte Formspree ID via https://formspree.io
+// TODO: verifieer Formspree-ID met een echte testmail. Stuur een testbericht en bevestig op formspree.io.
 const formspreeId = 'mkopyzbr';
 ---
 <form action={`https://formspree.io/f/${formspreeId}`} method="POST" class="contact-form">
   <div class="row">
     <label>
-      <span>Je naam</span>
+      <span>Uw naam</span>
       <input type="text" name="name" required autocomplete="name" />
     </label>
     <label>
@@ -18,10 +18,16 @@ const formspreeId = 'mkopyzbr';
     <input type="text" name="subject" />
   </label>
   <label>
-    <span>Je bericht</span>
+    <span>Uw bericht</span>
     <textarea name="message" rows="6" required></textarea>
   </label>
+  {/* Honeypot voor spambots — verbergen voor menselijke gebruikers */}
+  <label class="hp" aria-hidden="true">
+    <span>Laat dit veld leeg</span>
+    <input type="text" name="_gotcha" tabindex="-1" autocomplete="off" />
+  </label>
   <input type="hidden" name="_subject" value="Nieuw bericht via website Orthomoleculair Praktijk Zeist" />
+  <p class="form-privacy">Uw gegevens worden alleen gebruikt om uw bericht te beantwoorden. Zie de <a href="/privacy-policy">privacyverklaring</a>.</p>
   <button type="submit" class="btn btn-accent">Verstuur bericht</button>
 </form>
 
@@ -48,4 +54,7 @@ const formspreeId = 'mkopyzbr';
   box-shadow: 0 0 0 3px rgba(45,90,61,0.1);
 }
 .contact-form button { align-self: flex-start; }
+.hp { position: absolute; left: -9999px; width: 1px; height: 1px; overflow: hidden; }
+.form-privacy { font-size: 0.85rem; color: var(--color-text-muted); margin: 0; }
+.form-privacy a { color: var(--color-primary); }
 </style>

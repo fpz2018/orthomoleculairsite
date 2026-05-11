@@ -5,7 +5,8 @@ interface Props {
   image?: string;
   type?: 'website' | 'article';
 }
-const { title, description, image = '/images/og-default.jpg', type = 'website' } = Astro.props;
+// TODO: vervang og-default.svg door 1200x630 PNG/JPG voor optimale Facebook/Twitter sharing
+const { title, description, image = '/images/og-default.svg', type = 'website' } = Astro.props;
 const canonical = new URL(Astro.url.pathname, Astro.site).toString();
 const ogImage = new URL(image, Astro.site).toString();
 ---

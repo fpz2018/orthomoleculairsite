@@ -6,8 +6,8 @@ interface Props {
   label?: string;
 }
 const {
-  title = 'Klaar om je klachten serieus aan te pakken?',
-  text = 'Plan een gratis kennismakingsgesprek van 20 minuten. Geen verplichting — we kijken samen of mijn aanpak bij je past.',
+  title = 'Klaar om uw klachten serieus aan te pakken?',
+  text = 'Plan een gratis kennismakingsgesprek van 20 minuten. Geen verplichting — we kijken samen of mijn aanpak bij u past.',
   href = 'https://orthomoleculairzeist.clientomgeving.nl/afspraak-maken',
   label = 'Gratis kennismaking inplannen',
 } = Astro.props;
@@ -17,7 +17,7 @@ const {
     <div class="cta-inner">
       <h2>{title}</h2>
       <p>{text}</p>
-      <a href={href} class="btn btn-accent">{label}</a>
+      <a href={href} class="btn btn-accent" target="_blank" rel="noopener">{label}</a>
     </div>
   </div>
 </section>
