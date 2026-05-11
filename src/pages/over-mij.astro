@@ -10,6 +10,10 @@ import CTA from '../components/CTA.astro';
   intro="Orthomoleculair Natuurgeneeskundig Therapeut (HBO), kPNI-therapeut en fysiotherapeut. Sinds 1990 werkzaam in de gezondheidszorg, met een unieke combinatie van fysiotherapeutische én orthomoleculaire kennis."
   schemaType="person"
 >
+  <figure class="portrait">
+    <img src="/images/marc.jpg" alt="Marc de Jong, orthomoleculair therapeut en fysiotherapeut in Zeist" width="480" height="600" loading="eager" />
+  </figure>
+
   <h2>Mijn achtergrond</h2>
   <p>Ik ben in 1990 afgestudeerd als fysiotherapeut. Jarenlange praktijkervaring leerde me dat lang niet alle klachten zich laten verklaren — of oplossen — vanuit een puur biomechanische bril. Veel mensen liepen rond met "onbegrepen" pijn, vermoeidheid en buikklachten waar standaardzorg geen grip op kreeg.</p>
   <p>Die zoektocht bracht me naar de orthomoleculaire geneeskunde. Ik volgde de HBO-opleiding bij Evenwijs en specialiseerde me daarna in kPNI (klinische psycho-neuro-immunologie) bij Natura Foundation. Die combinatie — beweging én biochemie, weefsel én voeding, lichaam én leefstijl — vormt nu de kern van mijn werk.</p>
@@ -42,5 +46,19 @@ import CTA from '../components/CTA.astro';
   </ul>
   <p>Door deze registraties wordt mijn behandeling vaak (deels) vergoed vanuit de aanvullende zorgverzekering. Lees meer op de pagina <a href="/vergoedingen">vergoedingen</a>.</p>
 </PageLayout>
+
+<style>
+.portrait { margin: 0 0 var(--space-lg) 0; }
+.portrait img {
+  width: 100%;
+  max-width: 480px;
+  height: auto;
+  aspect-ratio: 4/5;
+  object-fit: cover;
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-md);
+  display: block;
+}
+</style>
 
 <CTA />

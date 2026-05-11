@@ -32,7 +32,7 @@ const faqItems = [
   <section class="about-short">
     <div class="container about-grid">
       <div class="about-photo">
-        <div class="photo-placeholder">Foto Marc</div>
+        <img src="/images/marc.jpg" alt="Marc de Jong, orthomoleculair therapeut en fysiotherapeut in Zeist" width="320" height="400" loading="lazy" />
       </div>
       <div>
         <p class="eyebrow">Even voorstellen</p>
@@ -134,14 +134,14 @@ const faqItems = [
 .about-grid { display: grid; grid-template-columns: 1fr 1.4fr; gap: var(--space-xl); align-items: center; }
 @media (max-width: 800px) { .about-grid { grid-template-columns: 1fr; } }
 .about-photo { display: flex; justify-content: center; }
-.photo-placeholder {
-  width: 280px; height: 340px;
-  background: var(--color-secondary);
+.about-photo img {
+  width: 320px;
+  height: 400px;
+  object-fit: cover;
   border-radius: var(--radius-lg);
-  display: flex; align-items: center; justify-content: center;
-  color: var(--color-text-muted);
-  border: 2px dashed var(--color-border);
+  box-shadow: var(--shadow-md);
 }
+@media (max-width: 800px) { .about-photo img { width: 100%; max-width: 360px; height: auto; aspect-ratio: 4/5; } }
 .creds { color: var(--color-text-muted); font-size: 0.9rem; margin: var(--space-sm) 0 var(--space-md); }
 .steps { list-style: none; counter-reset: step; padding: 0; margin-top: var(--space-lg); display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: var(--space-md); }
 .steps li {
