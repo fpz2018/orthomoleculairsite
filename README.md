@@ -27,20 +27,20 @@ npm run preview  # preview de build
 1. **Afbeeldingen** — download/optimaliseer foto's voor blogposts (`public/images/blog/`) en de homepage-foto van Marc.
 2. **OG image als PNG/JPG** — `public/images/og-default.svg` werkt voor de site maar Facebook/Twitter/LinkedIn renderen geen SVG-OG. Genereer een 1200x630 PNG of JPG.
 3. **Logo PNG** — vervang `public/images/logo.svg` t.z.t. door een echte PNG/SVG met praktijklogo (nu placeholder met initiaal "O").
-4. **Resterende blogposts migreren** — 8 blogposts staan nog niet in `src/content/blog/`:
+4. **Resterende blogposts migreren** — 7 blogposts staan nog niet in `src/content/blog/`:
    - tekort-vitamine-d-herkennen
    - de-ultieme-gids-voor-extra-vierge-olijfolie
    - oervoeding
    - vitamine-d
    - kracht-van-magnesium
-   - insulineresistentie
+   - ~~insulineresistentie~~ ✓ Gedaan (2026-05-20, gekoppeld aan PMOS-pagina)
    - lactaat
    - afslankprogrammas
 5. **Pagina vergoedingen** — definitieve lijst zorgverzekeraars toevoegen.
 6. **Foto Marc** — `public/images/marc.jpg` (97 KB, gewired op homepage + over-mij pagina). Originele PNG (1.9 MB) staat als backup in `assets-source/marc.png` (gitignored, niet gedeployed).
 7. **Formspree ID** — verifieer of `mkopyzbr` werkt: stuur een testbericht via `/contact` en bevestig op formspree.io.
 8. **Volledige blogposts** — de 7 gemigreerde blogs zijn samengevatte versies. Volledige content stond in `_content-raw/` (gitignored, niet meer aanwezig — bron mogelijk WordPress export).
-9. **Tone-of-voice blogposts** — structurele pagina's zijn nu u-vorm; blogposts gebruiken nog "je/jij/jouw". Apart pasje doen als wenselijk.
+9. ~~**Tone-of-voice blogposts** — structurele pagina's zijn nu u-vorm; blogposts gebruiken nog "je/jij/jouw". Apart pasje doen als wenselijk.~~ ✓ Gedaan (2026-05-20)
 
 ## Optimalisaties (mei 2026)
 
@@ -52,8 +52,11 @@ npm run preview  # preview de build
 - Externe afspraak-links openen in nieuwe tab
 - aria-current op actieve nav-link
 - Contactformulier: honeypot + privacy-disclaimer
-- Tone-of-voice naar u-vorm op alle structurele pagina's
+- Tone-of-voice naar u-vorm op alle structurele pagina's én blogposts
 - Dode interne links naar niet-bestaande blogposts gefixt
+- Header layout opgeschoond (geen conflict tussen `space-between` en `margin-left:auto`)
+- 4e specialisatie-pagina: **PMOS** (voorheen PCOS), inclusief redirect `/pcos → /pmos`
+- Image-fallback voor blog-cards: ontbrekende heroImages tonen nu category-tinted placeholder i.p.v. broken image
 
 ## Deploy
 

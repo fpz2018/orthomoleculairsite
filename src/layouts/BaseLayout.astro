@@ -33,5 +33,21 @@ const { title, description, image, type = 'website', schemaType = 'localbusiness
     <slot />
   </main>
   <Footer />
+  <script>
+    // Ontbrekende blog-afbeeldingen vervangen door category-placeholder
+    document.querySelectorAll('img[data-fallback]').forEach((img) => {
+      img.addEventListener('error', () => {
+        const parent = img.parentElement;
+        if (!parent) return;
+        const cat = parent.dataset.category || 'algemeen';
+        const label = parent.dataset.label || cat;
+        parent.classList.add('image-placeholder', 'cat-' + cat);
+        const span = document.createElement('span');
+        span.textContent = label;
+        parent.innerHTML = '';
+        parent.appendChild(span);
+      });
+    });
+  </script>
 </body>
 </html>

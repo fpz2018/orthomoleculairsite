@@ -36,7 +36,7 @@ Beperk omega-6-zaadoliën. Voorkeur voor olijfolie, avocado, roomboter, vette vi
 ## Stappenplan
 
 1. **Objectiveren** — pijnpatroon, energie, slaap, stress, voeding. Eventueel labonderzoek (vit D, hs-CRP, ferritine, glucose, omega-3-index).
-2. **Herbouw je bord** — 2/3 plantaardig, 1/3 eiwit, dagelijks ontstekingsremmende kruiden.
+2. **Herbouw uw bord** — 2/3 plantaardig, 1/3 eiwit, dagelijks ontstekingsremmende kruiden.
 3. **Vetkwaliteit** — vervang zaadoliën door olijfolie.
 4. **Magnesium en spanning** — 2–3x/dag 5 min ademhaling.
 5. **Vitamine D** — status laten beoordelen.

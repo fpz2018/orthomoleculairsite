@@ -18,7 +18,7 @@ Chronische pijn duurt langer dan drie maanden. Het zenuwstelsel raakt gevoeliger
 
 ## Magnesium en spierontspanning
 
-Magnesium is een mineraal dat je lichaam niet zelf maakt. Op celniveau werkt het met calcium als een schakelaar: calcium triggert contractie, **magnesium maakt ontspanning mogelijk**.
+Magnesium is een mineraal dat uw lichaam niet zelf maakt. Op celniveau werkt het met calcium als een schakelaar: calcium triggert contractie, **magnesium maakt ontspanning mogelijk**.
 
 ### Voedingsbronnen
 Groene bladgroenten, noten (amandelen, cashews), zaden (pompoen, sesam), peulvruchten, volle granen, pure cacao.
@@ -36,7 +36,7 @@ Groene bladgroenten, noten (amandelen, cashews), zaden (pompoen, sesam), peulvru
 Buikademhaling — 4 tellen in, 6 tellen uit. Een paar minuten per dag. Langere uitademing telt zwaarder dan diepe inademing.
 
 ### Beweging
-Wandelen, rustig fietsen, lichte stretching. Begin klein — 10 min per dag — en bouw op. Beweging vertelt je brein: "bewegen is veilig."
+Wandelen, rustig fietsen, lichte stretching. Begin klein — 10 min per dag — en bouw op. Beweging vertelt uw brein: "bewegen is veilig."
 
 ### Slaap
 Vaste bedtijd, geen helder licht of schermen 1 uur voor bed. Kalmerende routine. 2–4 weken voor merkbaar effect.

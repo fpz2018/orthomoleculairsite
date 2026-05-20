@@ -65,4 +65,4 @@ Onbewerkte basis: groente, fruit, peulvruchten, noten, zaden, eieren, vis, volle
 
 Flexibiliteit binnen 2–4 weken. Kracht en uithoudingsvermogen 8–12 weken consistent oefenen.
 
-Wil je dit persoonlijk laten begeleiden? Lees meer op de [pagina spier- en botklachten](/spierpijn) of plan een [gratis kennismaking](https://orthomoleculairzeist.clientomgeving.nl/afspraak-maken).
+Wilt u dit persoonlijk laten begeleiden? Lees meer op de [pagina spier- en botklachten](/spierpijn) of plan een [gratis kennismaking](https://orthomoleculairzeist.clientomgeving.nl/afspraak-maken).

@@ -37,7 +37,7 @@ const article = {
     </header>
     {heroImage && (
       <div class="container">
-        <img src={heroImage} alt={title} class="hero-image" loading="eager" />
+        <img src={heroImage} alt={title} class="hero-image" loading="eager" onerror="this.style.display='none'" />
       </div>
     )}
     <div class="container prose blog-body">

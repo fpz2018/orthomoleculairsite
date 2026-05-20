@@ -1,6 +1,6 @@
 ---
 title: "Snotterig en verkouden? De orthomoleculaire aanpak"
-description: "Praktische orthomoleculaire tips bij verkoudheid: voeding, leefstijl, suppletie en wanneer je medische hulp inschakelt."
+description: "Praktische orthomoleculaire tips bij verkoudheid: voeding, leefstijl, suppletie en wanneer u medische hulp inschakelt."
 pubDate: 2025-10-21
 heroImage: "/images/blog/verkoudheid.webp"
 category: "leefstijl"
@@ -8,17 +8,17 @@ tags: ["verkoudheid", "immuniteit", "vitamine C", "zink", "vitamine D"]
 readingTime: "12 min"
 ---
 
-Loopneus, kriebelhoest, energie weggezakt. De orthomoleculaire aanpak draait om het optimaal voeden van je natuurlijke afweer en herstelcapaciteit — niet om een toverpil. Hieronder de basis: wat je vandaag al kunt doen.
+Loopneus, kriebelhoest, energie weggezakt. De orthomoleculaire aanpak draait om het optimaal voeden van uw natuurlijke afweer en herstelcapaciteit — niet om een toverpil. Hieronder de basis: wat u vandaag al kunt doen.
 
 > Een verkoudheid wordt meestal door virussen veroorzaakt en gaat doorgaans vanzelf over. Orthomoleculaire interventies zijn ondersteunend, geen vervanging van medische zorg.
 
 ## Wat betekent de orthomoleculaire aanpak?
 
-Bij verkoudheid staan je slijmvliezen, bovenste luchtwegen en aangeboren immuunsysteem "aan". Slijmvliezen zijn de eerste barrière en hebben vocht, intacte epitheelcellen en een gebalanceerde immuunrespons nodig. Sleutelnutriënten: vitamine C en D, zink, selenium, vitamine A, B-vitamines, omega-3.
+Bij verkoudheid staan uw slijmvliezen, bovenste luchtwegen en aangeboren immuunsysteem "aan". Slijmvliezen zijn de eerste barrière en hebben vocht, intacte epitheelcellen en een gebalanceerde immuunrespons nodig. Sleutelnutriënten: vitamine C en D, zink, selenium, vitamine A, B-vitamines, omega-3.
 
-Daarnaast: verlaag "achtergrondruis" — schommelende bloedsuiker, slaaptekort, stress. Die snoepen van je herstelcapaciteit.
+Daarnaast: verlaag "achtergrondruis" — schommelende bloedsuiker, slaaptekort, stress. Die snoepen van uw herstelcapaciteit.
 
-## Praktisch wat je vandaag kunt doen
+## Praktisch wat u vandaag kunt doen
 
 ### Hydratatie en lokale verzorging
 - Warm water met citroen of gember, tijm- of saliethee bij keelpijn, rijke bouillon
@@ -60,4 +60,4 @@ Wees extra alert bij baby's, ouderen, chronisch zieken en zwangerschap.
 
 ## Samenvatting
 
-Houd het warm, simpel en zacht. Ondersteun je barrières, voed je immuunsysteem, verlaag systeemstress en kies gerichte, veilige interventies.
+Houd het warm, simpel en zacht. Ondersteun uw barrières, voed uw immuunsysteem, verlaag systeemstress en kies gerichte, veilige interventies.

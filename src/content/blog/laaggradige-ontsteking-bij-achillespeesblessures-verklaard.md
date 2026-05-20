@@ -1,6 +1,6 @@
 ---
 title: "Laaggradige ontsteking bij achillespeesblessures verklaard"
-description: "Waarom je achillespees zo traag herstelt, en hoe laaggradige ontsteking een onderschatte rol speelt — plus wat je eraan kunt doen."
+description: "Waarom uw achillespees zo traag herstelt, en hoe laaggradige ontsteking een onderschatte rol speelt — plus wat u eraan kunt doen."
 pubDate: 2025-09-02
 heroImage: "/images/blog/achillespees-ontsteking.webp"
 category: "spier-en-botklachten"
@@ -12,7 +12,7 @@ Een zeurende, stijve achillespees die 's ochtends protesteert, soepeler wordt na
 
 > Onderscheid: acute ontsteking is behulpzaam en kortdurend. Laaggradige ontsteking is chronisch, smeulend en remt herstel.
 
-## Wat gebeurt er in je pees?
+## Wat gebeurt er in uw pees?
 
 Een pees bestaat uit collageenvezels, water en extracellulaire matrix. Tenocyten reageren op belasting met op- en afbouw. Bij laaggradige ontsteking blijft afbraak relatief actief en krijgt opbouw onvoldoende ruimte.
 

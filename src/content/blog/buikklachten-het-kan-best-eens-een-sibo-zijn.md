@@ -1,6 +1,6 @@
 ---
 title: "Buikklachten? Het kan best eens een SIBO zijn"
-description: "Herken je een opgeblazen buik, buikpijn en wisselende ontlasting? SIBO kan de oorzaak zijn. Lees over symptomen, oorzaken, testen en aanpak."
+description: "Herkent u een opgeblazen buik, buikpijn en wisselende ontlasting? SIBO kan de oorzaak zijn. Lees over symptomen, oorzaken, testen en aanpak."
 pubDate: 2026-02-24
 heroImage: "/images/blog/sibo-buikklachten.webp"
 category: "darmgezondheid"
@@ -8,7 +8,7 @@ tags: ["SIBO", "darmklachten", "opgeblazen gevoel", "PDS"]
 readingTime: "14 min"
 ---
 
-Een opgeblazen buik alsof je zwanger bent, winderigheid, rommelende darmen, buikpijn na het eten, wisselende ontlasting, vermoeidheid en stemmingswisselingen. Vaak krijgt dit het etiket PDS, voedselintolerantie of "gevoelige maag". Maar **bacteriële overgroei in de dunne darm — SIBO** — is een veelvoorkomende, vaak gemiste oorzaak.
+Een opgeblazen buik alsof u zwanger bent, winderigheid, rommelende darmen, buikpijn na het eten, wisselende ontlasting, vermoeidheid en stemmingswisselingen. Vaak krijgt dit het etiket PDS, voedselintolerantie of "gevoelige maag". Maar **bacteriële overgroei in de dunne darm — SIBO** — is een veelvoorkomende, vaak gemiste oorzaak.
 
 > **Belangrijk:** Buikklachten hebben meerdere mogelijke oorzaken. Bij alarmsymptomen (onbedoeld gewichtsverlies, bloed bij de ontlasting, koorts, aanhoudende pijn) hoort de huisarts erbij.
 
@@ -32,7 +32,7 @@ SIBO (Small Intestinal Bacterial Overgrowth) is bacteriële overgroei in de dunn
 - Voedselvergiftiging in het verleden
 - Antibioticagebruik
 
-## Hoe herken je het?
+## Hoe herkent u het?
 
 De meestgebruikte test is een **ademtest met lactulose of glucose** — waterstof en methaan worden gemeten. Aspiratie/kweek is gouden standaard maar zelden gebruikt.
 
@@ -63,6 +63,6 @@ De meestgebruikte test is een **ademtest met lactulose of glucose** — watersto
 
 ## Slot
 
-SIBO is zelden een snelle fix — reken op 8–16 weken. Maar darmen zijn trainbaar. Wil je het niet alleen doen? Op de [pagina darmklachten](/darmklachten) lees je hoe ik je kan helpen, of plan een [gratis kennismaking](https://orthomoleculairzeist.clientomgeving.nl/afspraak-maken).
+SIBO is zelden een snelle fix — reken op 8–16 weken. Maar darmen zijn trainbaar. Wilt u het niet alleen doen? Op de [pagina darmklachten](/darmklachten) leest u hoe ik u kan helpen, of plan een [gratis kennismaking](https://orthomoleculairzeist.clientomgeving.nl/afspraak-maken).
 
-> **Disclaimer:** Deze tekst is informatief en vervangt geen medisch advies. Bij alarmsymptomen of medicijngebruik: overleg altijd met je arts.
+> **Disclaimer:** Deze tekst is informatief en vervangt geen medisch advies. Bij alarmsymptomen of medicijngebruik: overleg altijd met uw arts.

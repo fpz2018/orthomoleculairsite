@@ -1,0 +1,98 @@
+---
+import PageLayout from '../layouts/PageLayout.astro';
+import FAQ from '../components/FAQ.astro';
+import CTA from '../components/CTA.astro';
+
+const faqItems = [
+  { question: 'Is PMOS hetzelfde als PCOS?', answer: 'Ja. In mei 2026 is de internationale naam officieel gewijzigd van PCOS (Polycystic Ovary Syndrome) naar PMOS (Polyendocrine Metabolic Ovarian Syndrome). De aandoening is dezelfde, maar de nieuwe naam dekt beter wat er werkelijk speelt: meerdere hormonale én metabole verstoringen, niet alleen "cysten" op de eierstokken (die feitelijk geen cysten zijn).' },
+  { question: 'Vervangt orthomoleculaire therapie de gynaecoloog of huisarts?', answer: 'Nee. Bij vermoeden van PMOS hoort altijd een medische diagnose via huisarts en eventueel gynaecoloog of endocrinoloog. Orthomoleculaire therapie is aanvullend — ik werk op voeding, leefstijl en gerichte suppletie naast de reguliere zorg, niet in plaats daarvan.' },
+  { question: 'Werkt inositol echt bij PMOS?', answer: 'Voor myo-inositol en d-chiro-inositol (in een 40:1 ratio) is robuust wetenschappelijk bewijs voor het verbeteren van insulinegevoeligheid, cyclusregulatie en ovulatie bij PMOS. Het is geen wondermiddel, maar wel een van de best onderbouwde suppletie-interventies. Vraagt 3–6 maanden consistent gebruik voor merkbaar effect.' },
+  { question: 'Kan ik met PMOS afvallen?', answer: 'Ja, maar het is moeilijker dan zonder. Insulineresistentie zorgt dat het lichaam vet vasthoudt. Een lage-glycaemische, eiwitrijke aanpak — gecombineerd met krachttraining — werkt beter dan calorieën tellen alleen. 5–10% gewichtsverlies geeft vaak al cyclusherstel.' },
+  { question: 'Heb ik labonderzoek nodig?', answer: 'Vaak wel — om uw individuele beeld te begrijpen. Relevant: nuchter glucose en insuline (HOMA-IR), HbA1c, vitamine D, testosteron en SHBG, schildklierwaarden, lipidenprofiel en eventueel AMH. Veel van deze waarden kan de huisarts aanvragen; aanvullend werk ik met Biovis-bloedonderzoek.' },
+];
+---
+<PageLayout
+  title="PMOS (voorheen PCOS) behandelen in Zeist | Orthomoleculaire aanpak"
+  description="PCOS heet sinds mei 2026 PMOS: Polyendocrine Metabolic Ovarian Syndrome. Orthomoleculaire ondersteuning bij insulineresistentie, cyclusproblemen, acne en gewichtstoename."
+  h1="PMOS (voorheen PCOS): meer dan alleen 'cysten op de eierstokken'"
+  eyebrow="Specialisatie · Hormonale &amp; metabole gezondheid"
+  intro="In mei 2026 is PCOS officieel hernoemd naar PMOS — Polyendocrine Metabolic Ovarian Syndrome. Een belangrijke verandering, want de oude naam zette mensen én artsen op het verkeerde been. Het gaat niet om cysten: het gaat om een samenspel van insulineresistentie, hormonale ontregeling en laaggradige ontsteking."
+  schemaType="faq"
+  faq={faqItems}
+>
+  <h2>Wat is er veranderd — en waarom is dat belangrijk?</h2>
+  <p>Op 12 mei 2026 publiceerde <em>The Lancet</em> de uitkomst van een tien jaar durend internationaal consensusproces (56 organisaties, 14.300 patiënten en zorgverleners). De naam PCOS verdween — en daarmee een belangrijk misverstand.</p>
+  <p>De nieuwe naam is opgebouwd uit drie pijlers:</p>
+  <ul>
+    <li><strong>Poly-endocrien</strong> — meerdere hormonale verstoringen tegelijk: insuline, androgenen (zoals testosteron), LH/FSH en stresshormonen.</li>
+    <li><strong>Metabool</strong> — insulineresistentie, verhoogd risico op type 2 diabetes en hart- en vaatziekten, vaak gewichtstoename rond het middel.</li>
+    <li><strong>Ovarieel</strong> — verstoorde ovulatie, onregelmatige cyclus, mogelijke verminderde vruchtbaarheid.</li>
+  </ul>
+  <p>De "cysten" uit de oude naam waren feitelijk geen cysten maar onrijpe follikels. De nieuwe naam erkent eindelijk dat PMOS vooral een <strong>metabole en endocriene</strong> aandoening is — niet primair een eierstokprobleem. Dat verandert hoe we naar behandeling kijken.</p>
+
+  <h2>Herkent u deze klachten?</h2>
+  <ul>
+    <li><strong>Onregelmatige cyclus</strong> of langdurig uitblijven van de menstruatie</li>
+    <li><strong>Acne</strong> — vooral langs de kaaklijn en kin, ook op de rug</li>
+    <li><strong>Overbeharing</strong> in het gezicht, op de borst, buik of rug (hirsutisme)</li>
+    <li><strong>Dunner wordend haar</strong> op de kruin of bij de slapen</li>
+    <li><strong>Gewichtstoename rond de buik</strong>, moeite met afvallen ondanks inspanning</li>
+    <li><strong>Suikertrek en energiedips</strong> — wijst vaak op insulineresistentie</li>
+    <li><strong>Vermoeidheid en brain fog</strong></li>
+    <li><strong>Stemmingswisselingen</strong>, angst, somberheid</li>
+    <li><strong>Subfertiliteit</strong> — PMOS is wereldwijd de meest voorkomende oorzaak van anovulatoire onvruchtbaarheid</li>
+  </ul>
+
+  <h2>Waarom de orthomoleculaire aanpak werkt</h2>
+  <p>Reguliere zorg richt zich vaak op één symptoom tegelijk: de pil voor cyclusregulatie, metformine voor insulineresistentie, ovulatie-inductie bij kinderwens. Dat helpt — maar adresseert zelden de onderliggende mechanismen.</p>
+  <p>De orthomoleculaire aanpak start juist bij die mechanismen: <strong>insulineresistentie, ontstekingsbalans en hormonale aansturing</strong>. Niet als vervanging, wel als fundament onder uw bestaande behandeling.</p>
+
+  <h2>Mijn aanpak in het kort</h2>
+  <ol>
+    <li><strong>Intake en analyse</strong> — uitgebreid gesprek over uw cyclus, klachten, voedingsanamnese, leefstijl, stress, slaap en eventuele kinderwens.</li>
+    <li><strong>Eventueel labonderzoek</strong> — bloedonderzoek (Biovis) om insulineresistentie, vitamine D, schildklier en hormoonpatronen te objectiveren. Veel reguliere waarden kan uw huisarts ook prikken.</li>
+    <li><strong>Voedingsplan</strong> — anti-inflammatoir en lage-glycaemische opbouw: eiwit bij elke maaltijd, vezels, gezonde vetten, beperkt geraffineerde koolhydraten. Geen rigide dieet, wel een werkbaar kader.</li>
+    <li><strong>Gerichte suppletie</strong> — afhankelijk van uw beeld bijvoorbeeld inositol (myo+d-chiro 40:1), vitamine D, omega-3, magnesium, NAC of berberine. Gefaseerd opgebouwd, niet alles tegelijk.</li>
+    <li><strong>Leefstijl</strong> — krachttraining (verbetert insulinegevoeligheid effectiever dan cardio alleen), slaap, stressmanagement, daglicht.</li>
+    <li><strong>Begeleiding</strong> — vervolgconsulten om bij te sturen, in afstemming met uw huisarts of gynaecoloog.</li>
+  </ol>
+
+  <h2>Wat realistisch is</h2>
+  <p>PMOS verdwijnt niet, maar de klachten kunnen aanzienlijk verbeteren. Reken op een traject van enkele maanden:</p>
+  <ul>
+    <li><strong>4–8 weken:</strong> stabielere bloedsuiker, minder suikertrek, betere energie</li>
+    <li><strong>2–3 maanden:</strong> huid kalmer, minder ontstekingen</li>
+    <li><strong>3–6 maanden:</strong> cyclus regulariseert vaak, gewicht beweegt mee, ovulatie herstelt bij velen</li>
+  </ul>
+  <p>Consistentie weegt zwaarder dan perfectie. Een werkbaar plan op de lange termijn levert meer op dan een streng dieet dat na zes weken sneuvelt.</p>
+
+  <h2>Wanneer eerst naar de arts?</h2>
+  <p>Bij vermoeden van PMOS hoort een diagnose via de huisarts (en eventueel gynaecoloog of endocrinoloog). Ook bij:</p>
+  <ul>
+    <li>Actieve kinderwens — laat eerst de basisdiagnostiek doen</li>
+    <li>Sterke overbeharing of plotselinge stemveranderingen</li>
+    <li>Onverklaarbare gewichtstoename met andere klachten (schildklier eerst uitsluiten)</li>
+    <li>Bestaande medicatie (anticonceptie, metformine, schildkliermedicatie) — vertelt u dat altijd bij de intake</li>
+  </ul>
+
+  <h2>Lees verder</h2>
+  <ul>
+    <li><a href="/blog/leptine-wat-is-het-en-waar-moet-ik-op-letten">Leptine: hormonale aansturing van honger en verzadiging</a></li>
+    <li><a href="/vermoeidheid">Vermoeidheid en energieklachten</a></li>
+  </ul>
+
+  <p class="source-note">Bron naamswijziging: Teede HJ et al., <em>Polyendocrine metabolic ovarian syndrome, the new name for polycystic ovary syndrome: a multistep global consensus process</em>. The Lancet, 12 mei 2026.</p>
+</PageLayout>
+
+<FAQ items={faqItems} title="Veelgestelde vragen over PMOS" />
+<CTA />
+
+<style>
+  .source-note {
+    margin-top: var(--space-lg);
+    padding-top: var(--space-md);
+    border-top: 1px solid var(--color-border);
+    font-size: 0.88rem;
+    color: var(--color-text-muted);
+  }
+</style>
