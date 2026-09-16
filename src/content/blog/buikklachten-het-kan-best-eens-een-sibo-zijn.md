@@ -63,6 +63,6 @@ De meestgebruikte test is een **ademtest met lactulose of glucose** — watersto
 
 ## Slot
 
-SIBO is zelden een snelle fix — reken op 8–16 weken. Maar darmen zijn trainbaar. Wilt u het niet alleen doen? Op de [pagina darmklachten](/darmklachten) leest u hoe ik u kan helpen, of plan een [gratis kennismaking](https://orthomoleculairzeist.clientomgeving.nl/afspraak-maken).
+SIBO is zelden een snelle fix — reken op 8–16 weken. Maar darmen zijn trainbaar. Wilt u het niet alleen doen? Op de [pagina darmklachten](/darmklachten) leest u hoe ik u kan helpen, of [neemt u gerust contact op](/contact).
 
 > **Disclaimer:** Deze tekst is informatief en vervangt geen medisch advies. Bij alarmsymptomen of medicijngebruik: overleg altijd met uw arts.

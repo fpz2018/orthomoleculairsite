@@ -7,7 +7,7 @@ import ContactForm from '../components/ContactForm.astro';
 import CTA from '../components/CTA.astro';
 
 const faqItems = [
-  { question: 'Wat gebeurt er tijdens het eerste online gesprek?', answer: 'Tijdens het gratis online kennismakingsgesprek van 20 minuten bespreken we uw klachten en wat u graag zou willen bereiken. U krijgt een eerste indruk van mijn werkwijze en er is geen verplichting om verder te gaan.' },
+  { question: 'Hoe begint een traject bij u?', answer: 'U belt of mailt met uw klacht. In dat korte contact hoort u of orthomoleculaire therapie bij uw situatie past. Is dat zo, dan plannen we een uitgebreide intake van 60 tot 90 minuten waarin we uw klachten, voeding, leefstijl en voorgeschiedenis doornemen.' },
   { question: 'Voor welke klachten kunt u bij mij terecht?', answer: 'Vooral darm- en buikklachten (PDS, SIBO, voedselintoleranties), spier- en gewrichtsklachten (artrose, peesklachten, chronische rugpijn) en vermoeidheid/energieklachten. Bij twijfel: belt of mailt u even.' },
   { question: 'Wordt orthomoleculaire therapie vergoed?', answer: 'Veel aanvullende zorgverzekeringen vergoeden consulten geheel of gedeeltelijk omdat ik MBOG- en RBCZ-geregistreerd ben. Op de pagina vergoedingen leest u per zorgverzekeraar wat geldt.' },
   { question: 'Wat is het verschil met een diëtist of huisarts?', answer: 'Een orthomoleculair therapeut kijkt breder dan alleen voeding of standaardbehandeling: voeding, leefstijl, slaap, stress, supplementen en eventueel labonderzoek (bloed, ontlasting). Het is aanvullend op reguliere zorg, geen vervanging.' },
@@ -17,7 +17,7 @@ const faqItems = [
 ---
 <BaseLayout
   title="Orthomoleculair Praktijk Zeist | Marc de Jong — Darmklachten, spierpijn & vermoeidheid"
-  description="Persoonlijke orthomoleculaire therapie in Zeist voor darmklachten, spierpijn en vermoeidheid. MBOG- en RBCZ-geregistreerd. Plan een gratis kennismaking."
+  description="Persoonlijke orthomoleculaire therapie in Zeist voor darmklachten, spierpijn en vermoeidheid. MBOG- en RBCZ-geregistreerd. Belt of mailt u voor een afspraak."
   schemaType="faq"
   faq={faqItems}
 >
@@ -25,7 +25,7 @@ const faqItems = [
     eyebrow="Orthomoleculair Praktijk Zeist"
     title="Eindelijk verlichting van uw buikklachten of spierpijn"
     subtitle="Orthomoleculaire therapie voor mensen die de oorzaak willen vinden, niet alleen het symptoom dempen. Persoonlijke aanpak door Marc de Jong — fysiotherapeut én orthomoleculair therapeut."
-    ctaPrimary={{ href: 'https://orthomoleculairzeist.clientomgeving.nl/afspraak-maken', label: 'Gratis kennismaking inplannen', external: true }}
+    ctaPrimary={{ href: '/contact', label: 'Neem contact op' }}
     ctaSecondary={{ href: '#specialisaties', label: 'Bekijk hoe ik u kan helpen' }}
   />
 
@@ -77,7 +77,7 @@ const faqItems = [
       <p class="eyebrow">Mijn werkwijze</p>
       <h2>Vier stappen naar inzicht en herstel</h2>
       <ol class="steps">
-        <li><strong>Gratis kennismaking</strong><span>20 min online — we kijken of de aanpak bij u past.</span></li>
+        <li><strong>Contact</strong><span>U belt of mailt uw klacht — we kijken of de aanpak bij u past.</span></li>
         <li><strong>Grondige analyse</strong><span>Uitgebreide intake van 60–90 min, eventueel met bloed- of ontlastingonderzoek.</span></li>
         <li><strong>Persoonlijk plan</strong><span>Binnen een week ontvangt u een concreet plan op maat: voeding, leefstijl, supplementen.</span></li>
         <li><strong>Begeleiding &amp; evaluatie</strong><span>Vervolgconsulten om bij te sturen en samen vooruitgang te zien.</span></li>

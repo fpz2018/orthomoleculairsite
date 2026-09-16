@@ -127,6 +127,6 @@ Magnesium is geen quick-fix supplement. Het is een **rustig herstel-supplement**
 
 Magnesium is een van de meest dankbare interventies in de orthomoleculaire praktijk. Goed onderbouwd, veilig in de juiste dosering, en met breed effect op slaap, spieren, stress en energie. Maar het werkt alleen als u de juiste vorm kiest en het consequent inneemt.
 
-Wilt u uw individuele status laten checken of een persoonlijk plan? Plan een [gratis kennismaking](https://orthomoleculairzeist.clientomgeving.nl/afspraak-maken).
+Wilt u uw individuele status laten checken of een persoonlijk plan? [Neemt u gerust contact op](/contact) — we kijken kort of mijn aanpak bij uw klacht past.
 
 > Deze tekst is educatief en geen vervanging van medisch advies. Bij medicatiegebruik of bestaande diagnoses altijd overleggen met uw arts.

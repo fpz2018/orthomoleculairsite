@@ -107,6 +107,6 @@ Voor wie al sport: kijk eens kritisch of uw "matige" training niet onbedoeld de 
 
 Lactaat is geen vijand. Het is een briljante metabolische uitvinding van uw lichaam om energie tussen weefsels te delen. Wie zijn lactaat-shuttle goed onderhoudt, heeft een soepelere stofwisseling, sterkere mitochondriën, en — bonus — een scherper brein.
 
-Wilt u dit toepassen op uw eigen situatie of een persoonlijk advies? Plan een [gratis kennismaking](https://orthomoleculairzeist.clientomgeving.nl/afspraak-maken).
+Wilt u dit toepassen op uw eigen situatie of een persoonlijk advies? [Neemt u gerust contact op](/contact) — we kijken kort of mijn aanpak bij uw klacht past.
 
 > Deze tekst is educatief en geen vervanging van medisch advies. Bij bestaande hart- of vaatklachten altijd eerst overleggen met uw arts voor u met intervaltraining start.

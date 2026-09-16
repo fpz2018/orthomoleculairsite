@@ -112,6 +112,6 @@ We werken met:
 
 Afvallen is geen wilskracht-spel. Het is een biologisch puzzel waarin **hormonen, slaap, beweging, stress en voeding** samenwerken — of tegen elkaar in werken. Wie de juiste hefbomen vindt, valt geleidelijk af zónder voortdurend honger of obsessie.
 
-Wilt u een persoonlijk plan? Plan een [gratis kennismaking](https://orthomoleculairzeist.clientomgeving.nl/afspraak-maken).
+Wilt u een persoonlijk plan? [Neemt u gerust contact op](/contact) — we kijken kort of mijn aanpak bij uw klacht past.
 
 > Deze tekst is educatief en geen vervanging van medisch advies. Bij medicatiegebruik of bestaande diagnoses: altijd overleggen met uw arts.

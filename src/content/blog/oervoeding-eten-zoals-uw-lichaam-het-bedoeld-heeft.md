@@ -107,6 +107,6 @@ Oervoeding is geen dieetcode. Het is een manier van eten die zo dicht mogelijk b
 
 Geen religie. Geen ingrediëntenlijst van 20. Geen powders, drinks of bars. Gewoon eten.
 
-Wilt u onderzoeken hoe u dit naar uw situatie vertaalt? Plan een [gratis kennismaking](https://orthomoleculairzeist.clientomgeving.nl/afspraak-maken).
+Wilt u onderzoeken hoe u dit naar uw situatie vertaalt? [Neemt u gerust contact op](/contact) — we kijken kort of mijn aanpak bij uw klacht past.
 
 > Deze tekst is educatief en geen vervanging van medisch advies.

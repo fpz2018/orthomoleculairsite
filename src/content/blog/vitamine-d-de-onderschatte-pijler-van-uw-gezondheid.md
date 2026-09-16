@@ -131,6 +131,6 @@ Magnesium is nodig voor de conversie van vitamine D naar de actieve vorm. Lage m
 
 Vitamine D is geen wondermiddel, maar wel een van de meest impactvolle correctiebewegingen die u in uw orthomoleculaire pakket kunt opnemen. Het werkt het sterkst als u uw status kent en bij blijft houden — niet als u "iets in de winter slikt" zonder context.
 
-Wilt u uw spiegel laten meten en een persoonlijk plan? Plan een [gratis kennismaking](https://orthomoleculairzeist.clientomgeving.nl/afspraak-maken) of lees meer over [PMOS](/pmos) en [insulineresistentie](/blog/insulineresistentie-stille-motor-achter-pmos-vermoeidheid-en-gewichtstoename).
+Wilt u uw spiegel laten meten en een persoonlijk plan? [Neemt u gerust contact op](/contact) of lees meer over [PMOS](/pmos) en [insulineresistentie](/blog/insulineresistentie-stille-motor-achter-pmos-vermoeidheid-en-gewichtstoename).
 
 > Deze tekst is educatief en geen vervanging van medisch advies. Bij medicatiegebruik, zwangerschap of bestaande diagnoses altijd overleggen met uw arts.

@@ -134,6 +134,6 @@ Bij ruim 70% van de vrouwen met PMOS (voorheen PCOS) speelt insulineresistentie 
 
 Insulineresistentie is geen verschijnsel waarmee u moet leren leven — het is een van de meest beïnvloedbare metabole problemen die we kennen. De ingrediënten zijn niet exotisch: anders eten, meer spier, beter slapen, minder stress en gerichte ondersteuning waar nodig. Consistentie is wat het doet.
 
-Wilt u dit gericht aanpakken — bijvoorbeeld omdat u PMOS heeft of zich in meerdere signalen herkent? Plan een [gratis kennismaking](https://orthomoleculairzeist.clientomgeving.nl/afspraak-maken) of lees meer op de [PMOS-pagina](/pmos).
+Wilt u dit gericht aanpakken — bijvoorbeeld omdat u PMOS heeft of zich in meerdere signalen herkent? [Neemt u gerust contact op](/contact) of lees meer op de [PMOS-pagina](/pmos).
 
 > Deze tekst is educatief en geen vervanging van medisch advies. Bij medicatiegebruik of bestaande diagnoses: overleg altijd met uw arts of behandelaar.

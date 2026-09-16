@@ -116,6 +116,6 @@ Er zijn weinig voedingsmiddelen die zoveel doen voor zo weinig moeite. Maar **al
 
 Eén goede fles op uw aanrecht is een dagelijkse beslissing voor uw lange-termijngezondheid. Eenvoudig, lekker, en al door duizenden jaren in mediterrane culturen bewezen.
 
-Wilt u uw voeding doorlichten of een persoonlijk plan? Plan een [gratis kennismaking](https://orthomoleculairzeist.clientomgeving.nl/afspraak-maken).
+Wilt u uw voeding doorlichten of een persoonlijk plan? [Neemt u gerust contact op](/contact) — we kijken kort of mijn aanpak bij uw klacht past.
 
 > Deze tekst is educatief en geen vervanging van medisch advies.
